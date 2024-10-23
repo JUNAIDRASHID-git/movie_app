@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:movie_app/widgets/Bars/nav_bar.dart';
-import 'package:movie_app/widgets/main_font_widget.dart';
+import 'package:movie_app/widgets/Text_widgets/main_font_widget.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

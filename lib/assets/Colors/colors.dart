@@ -10,4 +10,4 @@ LinearGradient logoFontColor = const LinearGradient(
   end: Alignment.centerLeft,
 );
 
-Color whiteColor = Colors.white;
+Color whiteColor = const Color.fromARGB(255, 255, 255, 255);

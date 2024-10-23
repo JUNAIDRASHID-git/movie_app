@@ -53,7 +53,7 @@ class _NavBarState extends State<NavBar> {
                 ),
                 NavigationDestination(
                   icon: Icon(Icons.movie, color: Colors.white),
-                  label: 'CINIMATE',
+                  label: 'CINEMATE',
                 ),
                 NavigationDestination(
                   icon: Icon(Icons.subscriptions, color: Colors.white),

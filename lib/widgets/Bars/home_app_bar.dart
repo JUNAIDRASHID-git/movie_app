@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movie_app/widgets/main_font_widget.dart';
+import 'package:movie_app/widgets/Text_widgets/main_font_widget.dart';
 
 SliverAppBar homeSliverAppBar() {
   return SliverAppBar(

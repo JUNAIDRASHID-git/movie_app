@@ -17,8 +17,8 @@ FutureBuilder<List<MovieModel>> carouselSlider(
           child: SizedBox(child: CircularProgressIndicator()),
         );
       } else if (snapshot.hasError) {
-        return Center(
-          child: Text('Error: ${snapshot.error}'),
+        return const Center(
+          child: Text('Api Error (Refresh)'),
         );
       } else if (snapshot.hasData && snapshot.data!.isNotEmpty) {
         final movies = snapshot.data!;

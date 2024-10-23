@@ -8,7 +8,7 @@ ShaderMask mainFontWidget(double fontSize) {
           .createShader(Rect.fromLTWH(0, 0, bounds.width, bounds.height));
     },
     child: Text(
-      "C E N E M A T E",
+      "C I N E M A T E",
       style: TextStyle(
         color: whiteColor,
         fontSize: fontSize,

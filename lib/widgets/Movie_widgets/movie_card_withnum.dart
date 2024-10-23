@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/api/constant.dart';
+import 'package:movie_app/assets/Colors/colors.dart';
 import 'package:movie_app/models/movie_model/movie_model.dart';
+import 'package:movie_app/widgets/SpaceWidgets/sized_box.dart';
 
-SizedBox movieCardWidget(
+SizedBox movieCardWidgetWithNum(
     Future<List<MovieModel>> movieData, BuildContext context) {
   return SizedBox(
     height: 200,
@@ -12,8 +15,6 @@ SizedBox movieCardWidget(
         final movies = snapShot.data;
         if (snapShot.connectionState == ConnectionState.waiting) {
           return Container(
-            width: 160,
-            height: 100,
             color: Colors.transparent,
             child: const Center(
               child: CircularProgressIndicator(),
@@ -31,11 +32,22 @@ SizedBox movieCardWidget(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(15),
                   child: SizedBox(
-                    width: 160,
-                    height: 100,
-                    child: Image.network(
-                      "${Constant.imageBaseUrl}${movie.posterPath}",
-                      fit: BoxFit.fill,
+                    child: Stack(
+                      alignment: const Alignment(-1, 1),
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left:40.0),
+                          child: Image.network(
+                            "${Constant.imageBaseUrl}${movie.posterPath}",
+                            width: 240,
+                            fit: BoxFit.fill,
+                          ),
+                        ),
+                        Text(
+                          (index+1).toString(),
+                          style: GoogleFonts.aDLaMDisplay(fontSize: 100,fontWeight: FontWeight.w900)
+                        ),
+                      ],
                     ),
                   ),
                 ),
