@@ -11,3 +11,5 @@ LinearGradient logoFontColor = const LinearGradient(
 );
 
 Color whiteColor = const Color.fromARGB(255, 255, 255, 255);
+Color blackColor = const Color.fromARGB(255, 0, 0, 0);
+Color searchScreenButtonColor = const Color.fromARGB(255, 35, 41, 49);

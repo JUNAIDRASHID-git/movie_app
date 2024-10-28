@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:movie_app/api/constant.dart';
-import 'package:movie_app/assets/Colors/colors.dart';
 import 'package:movie_app/models/movie_model/movie_model.dart';
-import 'package:movie_app/widgets/SpaceWidgets/sized_box.dart';
 
 SizedBox movieCardWidgetWithNum(
     Future<List<MovieModel>> movieData, BuildContext context) {

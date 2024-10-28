@@ -41,6 +41,7 @@ class _CinimateScreenState extends State<CinimateScreen> {
   @override
   void initState() {
     super.initState();
+    preloadMovies();
     trendingMovies = fetchMovies(Constant.trendingUrl);
     popularMovies = fetchMovies(Constant.popularUrl);
     topRatedMovies = fetchMovies(Constant.topRatedUrl);

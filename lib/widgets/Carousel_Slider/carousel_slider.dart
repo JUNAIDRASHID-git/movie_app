@@ -46,7 +46,7 @@ FutureBuilder<List<MovieModel>> carouselSlider(
           options: CarouselOptions(
             initialPage: 2,
             autoPlay: true,
-            height: 170,
+            height: 220,
             onPageChanged: (index, reason) {
               updateState(index);
             },
