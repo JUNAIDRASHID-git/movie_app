@@ -68,11 +68,12 @@ class _SubscriptionScreenState extends State<SubscriptionScreen> {
               dotIndicator(length, _activeIndex),
               categoryHeadingText("Discover+: Most popular >"),
               movieCardWidget(topRatedMovies, context),
-              categoryHeadingText("Watch in Your Language"),
+              categoryHeadingText("Most watched"),
               movieCardWidgetWithNum(nowPlayingMovies, context),
               categoryHeadingText("Stories from the hearland >"),
               movieCardWidget(popularMovies, context),
-              categoryHeadingText("Lionsgate Play: Blockbuster Action Thrillers"),
+              categoryHeadingText(
+                  "Lionsgate Play: Blockbuster Action Thrillers"),
               movieCardWidget(upcomingMovies, context),
               sizedBox(10)
             ],
